@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>App</title>
+  </head>
+  <body class="">
+    <main>
+      <section class="additional">
+        <div id="game">
+          <h1>Random Number Game</h1>
+          <span style="font-weight: 900">Generate a number between 0 and</span>
+          <input id="limit" type="number" min="0" required />
+          <form style="margin-top: 20px" id="playGround">
+            <span>Guess the number:</span>
+            <input type="number" id="guess" required />
+            <button id="submit" class="submit" type="submit">Play!</button>
+          </form>
+          <p id="result"></p>
+          <p style="font-weight: 900" id="gameResult"></p>
+        </div>
+        <section id="dday">
+          <h1>D-Day</h1>
+          <form id="ddayForm">
+            <input
+              id="date"
+              type="date"
+              required
+              placeholder="날짜를 선택하세요"
+            />
+            <button id="submitDate" class="submit">Select Date</button>
+          </form>
+          <h2 class="js-clock"></h2>
+        </section>
+      </section>
+
+      <section class="mainSection">
+        <div class="clockContainer">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <form id="login-form" class="hidden" class="show">
+          <input
+            id="login-input"
+            required
+            type="text"
+            placeholder="What is your name?"
+          />
+          <button id="loginButton">Log In</button>
+        </form>
+        <h1 id="greet" class="hidden"></h1>
+        <section id="bottom">
+          <div class="logOut"><button id="logoutButton">Clear</button></div>
+          <div id="quote">
+            <span class="qoute"></span>
+            <span class="author"></span>
+          </div>
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+      </section>
+      <section class="right">
+        <section class="bookmark">
+          <h1>Bookmarks</h1>
+          <form id="bookmarkForm">
+            <input type="text" id="siteName" placeholder="Name" required />
+            <input
+              type="url"
+              id="siteUrl"
+              placeholder="URL (The URL must be exact)"
+              required
+            />
+            <button type="submit">Add Bookmark</button>
+          </form>
+          <div id="bookmarkCountainer">
+            <ul id="bookmarksList"></ul>
+          </div>
+        </section>
+
+        <div id="todo">
+          <form id="todo-form">
+            <input
+              id="todo-input"
+              type="text"
+              maxlength="30"
+              placeholder="할 일 목록을 작성하세요"
+              required
+            />
+          </form>
+
+          <div>
+            <div id="todoContainer">
+              <ul id="todo-list" class="ul"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/qoute.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/bookmark.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/randomNumber.js"></script>
+  </body>
+</html>
